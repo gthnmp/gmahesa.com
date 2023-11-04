@@ -40,8 +40,8 @@ export default function Home() {
         <p className='font-light text-lg'> I do web development using React and Vanilla JS. I have solid background in computer networking from my previous education and have experience using Linux and Docker Container. I look forward to connecting and exploring collaborative opportunities in the field of web development and DevOps. </p>
       </div>
       <div className='flex gap-5'>
-        <Link href="/" className='flex  gap-2 items-center'> My Github <BsArrowUpRight/></Link>
-        <Link href="/" className='flex  gap-2 items-center'> Mail Me <BsArrowUpRight/></Link>
+        <Link href="https://github.com/gthnmp" target='_blank' className='flex  gap-2 items-center'> My Github <BsArrowUpRight/></Link>
+        <Link href="mailto:gathan.mahesa@gmail.com" className='flex  gap-2 items-center'> Mail Me <BsArrowUpRight/></Link>
       </div>
     </main>
   )
