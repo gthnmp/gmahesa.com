@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.blog-card-title {
+  position: relative;
+}
+
+.blog-card-title::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform 300ms;
+}
+
+.blog-card-title:hover::after {
+  transform: translateX(0);
+}
+
