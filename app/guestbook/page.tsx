@@ -13,9 +13,7 @@ export default async function Guestbook() {
         <h1 className='text-3xl font-medium'> sign my guestbook </h1>
         {session ? (
           <>
-            <p> Hello there user! {session.user?.name} </p>
             <GuestbookForm/>
-            <SignOut> Sign Out </SignOut>
           </>
         ) : (
           <SignInView/>
