@@ -1,18 +1,8 @@
 "use client"
 import { FcGoogle } from "react-icons/fc"
-import { signIn, signOut } from "next-auth/react"
+import { signIn } from "next-auth/react"
 import React from "react"
 import { BsGithub, BsDiscord, BsFacebook } from "react-icons/bs"
-import {BiLogOut} from 'react-icons/bi'
-
-export function SignOut ({children} : {children : React.ReactNode}){
-  return (
-    <button onClick={() => signOut()} className="w-full flex items-center justify-center gap-3 bg-[#171515] px-3 py-3 rounded-md border-[1px] border-neutral-700">
-      <BiLogOut className="scale-150" /> 
-      {children}
-    </button>
-  )
-}
 
 export function GoogleAuthentication ({children} : {children : React.ReactNode}){
   return (
