@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Versoin 3 
+New portfolio, inspired from  [`leerob.io`](https://leerob.io). Powered using Next.js, tailwind, and vercel.
 
 ## Getting Started
 
