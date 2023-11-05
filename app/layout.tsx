@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div id="app" className='bg-neutral-900 text-white w-screen min-h-screen grid place-items-center'>
-          <div className='max-w-screen-md w-full h-full pt-16 pb-32 flex flex-col gap-20'>
+          <div className='relative max-w-screen-md w-full h-full py-32 flex flex-col gap-20'>
             <Navbar/>
             {children}
           </div>
