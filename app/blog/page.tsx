@@ -15,7 +15,7 @@ function BlogCard ({title, subtitle, href} : {title: string, subtitle: string, h
 }
 export default function Home() {
   return (
-    <main className='w-full h-full flex flex-col gap-10'>
+    <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0'>
       <div className='flex flex-col gap-5'>
         <h1 className='text-3xl font-medium'> I also have poorly written blogs </h1>
       </div>
