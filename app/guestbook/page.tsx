@@ -8,7 +8,8 @@ import { Message } from "@/utils/types"
 
 export default async function Guestbook() {
   const session = await getServerSession(authConfig) 
-  const messages = await getMessages() as Message[]
+  // const messages = await getMessages() as Message[] || [{id:1, sender:'gahan', content:'what would possibly happen if this is a very very long message give by the user? seems alright to me'}]
+  const messages = await getMessages() as Message[] || []
   return (
     <main className='w-full h-full flex flex-col gap-10 px-4'>
       <div className='flex flex-col gap-5'>

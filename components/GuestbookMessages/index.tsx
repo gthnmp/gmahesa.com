@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 
 export default function GuestbookMessages({ messages }: { messages: Message[] }) {
-  const [messageList, setMessageList] = useState<Message[]>([...messages]);
+  const [messageList, setMessageList] = useState<Message[]>([...messages] || []);
 
   useEffect(() => {
     const liveMessages = supabase.channel('messages').on(
