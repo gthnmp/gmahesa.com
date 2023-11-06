@@ -2,8 +2,8 @@ import { SupabaseClient, createClient } from "@supabase/supabase-js";
 import { getSession } from "next-auth/react";
 import { revalidatePath } from "next/cache";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_DEVELOPMENT_URL!
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_DEVELOPMENT_SECRET!
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_SECRET!
 export const supabase: SupabaseClient = createClient(supabaseUrl, supabaseKey)
 
 export const getMessages = async () => {
