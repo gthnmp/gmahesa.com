@@ -12,7 +12,7 @@ import PortfolioV1Thumbnail from '@/public/assets/blog.webp'
 
 export default function Home() {
   return (
-    <main className='w-full h-full flex flex-col gap-10 px-4 text-lg leading-8 md:leading-0'>
+    <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0 text-lg leading-8 md:leading-0'>
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl md:text-3xl font-medium'> hey there, I&apos;m gathan👋</h1>
         <p className='font-light '> 
