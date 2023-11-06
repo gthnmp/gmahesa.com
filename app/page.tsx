@@ -10,14 +10,13 @@ import JakartaThumbnail from '@/public/assets/jakarta.webp'
 import OnixThumbnail from '@/public/assets/onix.webp'
 import PortfolioV1Thumbnail from '@/public/assets/blog.webp'
 
-
 export default function Home() {
   return (
     <main className='w-full h-full flex flex-col gap-10'>
       <div className='flex flex-col gap-5'>
-        <h1 className='text-3xl font-medium'> hey there, I'm gathan👋</h1>
+        <h1 className='text-3xl font-medium'> hey there, I&apos;m gathan👋</h1>
         <p className='font-light text-lg'> 
-          I'm a web developer (mostly doing frontends), devops enthusiast, and a networking guy. Currently, I'm freelancing in these roles and always open to new opportunities. Let's build something awesome together!
+          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a networking guy. Currently, I&apos;m freelancing in these roles and always open to new opportunities. Let&apos;s build something awesome together!
         </p>
       </div>
       <div className='w-full h-96 grid grid-cols-3 grid-rows-2 gap-5  bg-opacity-30'>
@@ -36,7 +35,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light text-lg'> 
-          Lately, I've written content on my blog. I try to keep things simple. You'll find writing about technologies I'm interested in at the time, how I'm learning, or sharing knowledge along the way.
+          Lately, I&apos;ve written content on my blog. I try to keep things simple. You&apos;ll find writing about technologies I&apos;m interested in at the time, how I&apos;m learning, or sharing knowledge along the way.
         </p>
       </div>
       <div className='flex flex-col gap-5'>
@@ -45,7 +44,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light text-lg'>
-          Hey, don't forget to check out my Twitter and LinkedIn profiles. Feel free to give me a follow on there too! It's a great way to stay connected and keep up with what I'm up to. Thanks for the support! 
+          Hey, don&apos;t forget to check out my Twitter and LinkedIn profiles. Feel free to give me a follow on there too! It&apos;s a great way to stay connected and keep up with what I&apos;m up to. Thanks for the support! 
         </p>
       </div>
       <div className='flex gap-5'>
@@ -57,7 +56,7 @@ export default function Home() {
       </div>
       <div className='flex justify-between font-light'>
         <div className='flex gap-5'>
-          <Link href="https://github.com/gthnmp" target='_blank' className='flex  gap-2 items-center'> My Github <BsArrowUpRight/></Link>
+          <Link href="https://github.com/gthnmp" target='_blank' className='flex  gap-2 items- center'> My Github <BsArrowUpRight/></Link>
           <Link href="mailto:gathan.mahesa@gmail.com" className='flex  gap-2 items-center'> Mail Me <BsArrowUpRight/></Link>
         </div>
         <span>©2023 All rights reserved.</span>
