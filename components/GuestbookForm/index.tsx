@@ -1,9 +1,10 @@
 'use client';
 
+import { saveGuestbookEntry } from '@/utils/db';
 import { useRef } from 'react';
 import { useFormStatus } from 'react-dom';
 
-export default function GuestbookForm () {
+export default function GuestbookForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const { pending } = useFormStatus();
 
@@ -12,6 +13,10 @@ export default function GuestbookForm () {
       style={{ opacity: !pending ? 1 : 0.7 }}
       className="relative w-full h-10 flex items-center"
       ref={formRef}
+      action={async(formData) => {
+        await saveGuestbookEntry(formData)
+        formRef.current?.reset()
+      }}
     >
       <input
         aria-label="Your message"
