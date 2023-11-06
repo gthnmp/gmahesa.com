@@ -2,7 +2,7 @@ import { GoogleAuthentication, GithubAuthentication, DiscordAuthentication } fro
 
 export const SignInView = () => {
   return(
-    <div className="w-full grid grid-cols-3 gap-5">
+    <div className="w-full grid grid-rows-3 sm:grid-rows-none sm:grid-cols-3 gap-5">
       <GoogleAuthentication>
         Sign in with Google
       </GoogleAuthentication>
