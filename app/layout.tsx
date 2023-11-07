@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/navbar'
 import { authConfig } from '@/utils/auth'
 import { getServerSession } from 'next-auth'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Ubuntu({
   weight:['300','400','500','700'],
@@ -28,6 +29,7 @@ export default async function RootLayout({
           <div className='relative max-w-screen-md w-full h-full py-32 flex flex-col gap-20'>
             <Navbar session={session}/>
             {children}
+            <Analytics/>
           </div>
         </div>
       </body>
