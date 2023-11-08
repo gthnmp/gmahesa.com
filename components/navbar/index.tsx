@@ -5,7 +5,7 @@ import {BiLogOut} from 'react-icons/bi'
 
 export default function Navbar ({session} : {session : any}) {
   return(
-    <nav className="absolute top-0 w-full h-20 flex justify-between items-center px-4 text-sm md:text-base">
+    <nav className="absolute top-0 w-full h-20 flex justify-between items-center text-sm md:text-base">
       <div className="flex gap-5 items-center">
         <Link href="/"> Home </Link>
         <Link href="/blog"> Blog </Link>
