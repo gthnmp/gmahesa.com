@@ -5,6 +5,12 @@ import GuestbookForm from "@/components/GuestbookForm"
 import { getMessages } from "@/utils/db"
 import GuestbookMessages from "@/components/GuestbookMessages"
 import { Message } from "@/utils/types" 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Guestbook',
+  description: 'Sign my guestbook and leave your mark.',
+};
 
 export default async function Guestbook() {
   const session = await getServerSession(authConfig) 

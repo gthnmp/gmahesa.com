@@ -1,5 +1,12 @@
 import Anchor from "@/components/anchor"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Read my thoughts on software development, philosophy, and more.',
+};
+
 
 function BlogCard ({title, subtitle, href} : {title: string, subtitle: string, href: string}) {
   return(
