@@ -17,7 +17,7 @@ export default async function Guestbook() {
   // const messages = await getMessages() as Message[] || [{id:1, sender:'gahan', content:'what would possibly happen if this is a very very long message give by the user? seems alright to me'}]
   const messages = await getMessages() as Message[] || []
   return (
-    <main className='w-full h-full flex flex-col gap-10 px-4'>
+    <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0'>
       <div className='flex flex-col gap-5'>
         <h1 className='text-3xl font-medium'> sign my guestbook </h1>
         {session ? (
