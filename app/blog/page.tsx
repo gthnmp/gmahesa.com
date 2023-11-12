@@ -27,11 +27,7 @@ export default function Home() {
         <h1 className='text-3xl font-medium'> I also have poorly written blogs </h1>
       </div>
       <div className="flex flex-col gap-5">
-        <BlogCard title={"Managin Space With LVM"} subtitle="Understanding the concept of Logical Volume Manager" href='/'/>
-        <BlogCard title={"Principles to Read More Books"} subtitle="6 principles to improve and read more books" href='/'/>
-        <BlogCard title={"How To Install Docker Enginer On Ubuntu Machine"} subtitle="Installing a Docker engine on an Ubuntu machine" href='/'/>
-        <BlogCard title={"Grab with Grep"} subtitle="General overview and tricks using grep" href='/'/>
-        <BlogCard title={"Building E-Commerce Site For Onix"} subtitle="Process and documentation" href='/'/>
+        <BlogCard title={"Impostor Syndrome and The Dunning Kruger Effect"} subtitle="The correlation between impostor syndrome and the Dunning-Kruger effect" href='/blog/impostor-syndrome-and-dunning-kruger-effect'/>
       </div>
     </main>
   )
