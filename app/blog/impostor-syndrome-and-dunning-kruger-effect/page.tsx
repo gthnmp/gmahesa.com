@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Image1 from '@/public/assets/blog-images/impostor-and-dunning-kruger/1.webp'
 import Image2 from '@/public/assets/blog-images/impostor-and-dunning-kruger/2.webp'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Impostor Syndrome and The Dunning-Kruger Effect',
+  description: 'The correlation between impostor syndrome and the Dunning-Kruger effect.',
+};
 
 export default function Page() {
   return (
