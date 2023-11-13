@@ -1,99 +1,85 @@
 import Image from "next/image";
+import Image1 from '@/public/assets/blog-images/impostor-and-dunning-kruger/1.webp'
+import Image2 from '@/public/assets/blog-images/impostor-and-dunning-kruger/2.webp'
 
 export default function Page() {
   return (
-    <article className="flex flex-col gap-10">
+    <article className="flex flex-col gap-10 px-4 md:px-0">
       <header className="flex flex-col gap-3">
-        <h1 className="text-3xl font-medium"> Impostor Syndrome and The Dunning-Kruger Effect </h1>
+        <h1 className="text-3xl font-medium"> Sindrom Impostor dan Efek Dunning-Kruger </h1>
         <span className="text-neutral-200"> 12 November 2023 </span>
       </header>
       <main className="flex flex-col gap-5 text-xl leading-10 text-neutral-300">
         <p>
-          Imposter syndrome and the Dunning-Kruger effect are well-known topics on LinkedIn but not discussed enough in academia. In the corporate world, they are usually discussed separately (maybe because it yields two posts rather than one), but they are two sides of the same coin.
+          Sindrom impostor dan efek Dunning-Kruger merupakan topik yang cukup populer di LinkedIn dan Quora internasional, namun jarang dibahas di warganet Indonesia (mungkin ada, tapi gue aja yang gak tau). Karena gue sering mengalami dua hal tersebut, mungkin gue bakal bahas di sini. 
         </p>
         <div className="w-full h-max flex items-center justify-center ">
-          <div className="w-2/3 h-auto">
-            <Image className="w-full h-full object-cover" src={"https://miro.medium.com/v2/resize:fit:720/format:webp/1*yR41JIPyB-1Li8X5h3zcCg.png"} alt="Dunning Kruger Effect" width={1000} height={1000}/>
+          <div className="w-full md:w-2/3 h-auto">
+            <Image className="w-full h-full object-cover" src={Image1} alt="Grafik hubungan antara efek Dunning-Kruger dan sindrom impostor" width={1000} height={1000}/>
           </div>
         </div>
         <p>
-          As shown in the graph, the Dunning-Kruger effect happens when we are overconfident compared to our knowledge. Imposter syndrome, on the other hand, occurs when we are too humble about our knowledge and feel like we don’t know enough.
+          Seperti yang anda lihat di grafik, efek Dunning-Kruger terjadi ketika kita terlalu percaya diri dibandingkan dengan pengetahuan yang dimiliki. Sindrom impostor, di sisi lain, terjadi ketika kita kurang percaya diri tentang pengetahuan kita dan merasa kalau kita masih belum cukup tahu.
         </p>
         <p>
-          Strictly speaking, Dunning & Kruger (1999) “across 4 studies, […] found that participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability”.
+          <i>Strictly speaking</i>, Dunning & Kruger (1999) <i>"across 4 studies, […] found that participants scoring in the bottom quartile on tests of humor, grammar, and logic grossly overestimated their test performance and ability".</i>
         </p>
         <p>
-          Everyone has faced the Dunning-Kruger effect at least once. If you are like most, beyond thinking you’re a better driver than the average, you have scrolled through some cooking Instagram, then read two recipes from google, and thought you were a cooking master. However, your expectations probably ended up far from reality. You found out the hard way that two recipes don’t scratch the surface of cake mastery and your cake did not please your or your friend%apos;s tastes.
+          Setiap orang pasti pernah mengalami efek Dunning-Kruger setidaknya sekali. Jika Anda seperti kebanyakan orang, Anda mungkin pernah nonton tutorial cara bikin website di YouTube dan merasa kaya jadi orang paling jago di dunia <i>web development</i>. Upload foto lagi <i>ngoding</i> di media sosial, lalu siap banget ngejar posisi di FAANG. Tapi ternyata, setelah melihat lebih dalam, baru sadar masih banyak banget yang harus dipelajari. Merasa udah jago, eh, pas dipraktekkan ke proyek yang lebih serius, baru ngerasa seberapa banyak yang belum dipahami. Gapapa, gue juga pernah kayak gitu kok.
         </p>
         <p>
-          In contrast, imposter syndrome lies in the opposite quadrant of the graph. Impostor syndrome is a psychological phenomenon where people doubt their accomplishments and their knowledge. They might have a persistent fear of being exposed as an imposter despite evidence that they are quite accomplished. Although not classified as a proper disease, imposter syndrome is a well-researched psychological phenomenon.
+          Sebaliknya, sindrom impostor berada di kuadran berlawanan dari grafik tersebut. Sindrom impostor adalah fenomena psikologis meragukan orang meragukan pencapaian dan pengetahuan mereka. Mereka mungkin memiliki rasa takut untuk terbongkar sebagai seorang penipu meskipun ada bukti bahwa mereka sangat berprestasi. Meskipun tidak diklasifikasikan sebagai penyakit yang benar, sindrom impostor adalah fenomena psikologis yang banyak menghantui orang-orang.
         </p>
         <p>
-          Imposter syndrome materializes when you are actually a cake master, but believes that your cakes are not good enough. Or, when you are an F1 driver but believe you can’t drive through the streets in a regular car.
+          Sindrom impostor itu ketika Anda sebenernya jago bikin <i>software</i>, tapi tetap merasa karya Anda kurang oke. Atau, bayangkan Anda jadi pembalap F1, tapi masih merasa tidak bisa mengemudikan mobil biasa di jalan. Itu, perasaan seperti itu suka muncul.
         </p>
         <p>
-          Both effects can be experienced by anyone, regardless of their level of success or competence. Thus, both effects should be discussed broadly. They are cognitive distortions that may affect our emotions and productivity.
+          Kedua fenomena ini bisa dialami oleh siapa saja, terlepas dari tingkat kesuksesan atau kompetensinya. Oleh karena itu, kedua efek ini sebaiknya dibahas secara luas. Mereka adalah masalah yang dapat mempengaruhi emosi dan produktivitas kita.
         </p>
         <h2 className="text-3xl font-medium text-white">
-          Embrace the journey
+          Nikmati Prosesnya
         </h2>
         <p>
-          You may now be thinking: “ok, quite interesting cognitive distortions, but what do I do about them?” Well, chatGPT gives some useful tips:
+          Anda mungkin sekarang berpikir: "oke, masalah yang cukup menarik, tapi apa yang harus gue lakuin tentang itu?" Nah, ChatGPT ngasih beberapa tips yang berguna:
         </p>
         <ul className="flex flex-col gap-3 pl-10">
           <li>
-            1. Acknowledge Your Feelings: Recognizing and accepting your emotions can help you confront and address imposter syndrome, while acknowledging limitations can help combat the Dunning-Kruger effect.
+            <b>1. Akui Perasaan Anda</b>: Mengakui dan menerima emosi Anda dapat membantu Anda menghadapi dan mengatasi sindrom impostor, sementara mengakui batasan dapat membantu melawan efek Dunning-Kruger.
           </li>
           <li>
-            2. Reframe Your Thoughts: Changing negative self-talk to positive and realistic self-talk can help combat imposter syndrome and the Dunning-Kruger effect.
+            <b>2. Ubah Pikiran Anda</b>: Mengubah percakapan negatif tentang diri sendiri menjadi percakapan positif dan realistis dapat membantu melawan sindrom impostor dan efek Dunning-Kruger.
           </li>
           <li>
-            3. Set Reasonable Goals: Setting achievable goals can help combat imposter syndrome and the Dunning-Kruger effect by providing a realistic gauge of success and preventing unrealistic expectations.
+            <b>3. Tetapkan Tujuan yang Masuk Akal</b>: Menetapkan tujuan yang dapat dicapai dapat membantu melawan sindrom impostor dan efek Dunning-Kruger dengan memberikan ukuran keberhasilan yang realistis dan mencegah harapan yang tidak realistis.
           </li>
           <li>
-            4. Seek Support: Receiving support from peers or mentors can help alleviate the feeling of being an imposter, while gaining feedback and constructive criticism can help combat the Dunning-Kruger effect.
+            <b>4. Cari Dukungan</b>: Menerima dukungan dari rekan atau mentor dapat membantu mengurangi perasaan menjadi seorang penipu, sementara mendapatkan umpan balik dan kritik konstruktif dapat membantu melawan efek Dunning-Kruger.
           </li>
           <li>
-            5. Take Action: Taking action towards your goals can help boost your confidence and combat imposter syndrome, while taking time to learn and improve can combat the Dunning-Kruger effect by humbling your perception of your own expertise.
+            <b>5. Ambil Tindakan</b>: Mengambil tindakan menuju tujuan Anda dapat membantu meningkatkan rasa percaya diri Anda dan melawan sindrom impostor, sementara mengambil waktu untuk belajar dan memperbaiki dapat melawan efek Dunning-Kruger dengan merendahkan persepsi tentang keahlian Anda sendiri.
           </li>
         </ul>
         <p>
-          This are actually great advice and I wish I had received them early on in my career. However, I have one additional tip: embrace the journey. The following graph has popularized the Dunning Kruger effect and imposter syndrome:
+          Ini sebenarnya saran yang bagus dan gue berharap gue udah dapet sejak gue masih sekolah. Namun, gue punya tip tambahan: <b>nikmati prosesnya</b>. Grafik di bawah telah mempopulerkan efek Dunning-Kruger dan sindrom impostor:
         </p>
         <div className="w-full h-max flex items-center justify-center ">
-          <div className="w-2/3 h-auto">
-            <Image className="w-full h-full object-cover" src={" https://miro.medium.com/v2/resize:fit:640/format:webp/1*RdGwqbCh0pY3eTAtzELDPA.png"} alt="Dunning Kruger Effect" width={1000} height={1000}/>
+          <div className="w-full md:w-2/3 h-auto">
+            <Image className="w-full h-full object-cover" src={Image2} alt="Efek Dunning Kruger" width={1000} height={1000}/>
           </div>
         </div>
         <p>
-          The graph depicts the relationship between confidence and knowledge in a different manner. It shows that while knowledge accumulates, confidence does not go along. The graph has three different points in the journey of knowledge accumulation: the mount of stupidity, the valley of despair, and the line of balance.
+          Grafik di atas menggambarkan hubungan antara percaya diri dan pengetahuan. Grafik tersebut menunjukkan bahwa ketika pengetahuan bertambah, keyakinan tidak mengikuti. Grafik memiliki tiga titik berbeda: <i>mount of stupidity, valley of despair,</i> dan <i>line of balance.</i> Titik-titik ini hampir tidak bisa kita hindari dalam proses belajar.         </p>
+        <p>
+          Dalam dunia <i>software development</i>, kita sering ngalamin hal yang mirip sindrom impostor dan efek Dunning-Kruger, walau tidak selalu dibahas. Seperti lagi naik rollercoaster pengetahuan-keyakinan. Di awal, ketika baru belajar <i>ngoding</i>, mungkin merasa rendah hati, tau masih banyak yang harus dipelajari. Tapi lama kelamaan, terutama pas lagi nangani proyek yang makin kompleks, baru kelihatan banget masalah ini. Misalnya, pas lagi bikin fitur, awalnya bisa overconfident dengan kemampuan sendiri. Tapi begitu dapat feedback kritis dari tim atau <i>client</i>, tiba-tiba muncul rasa ragu, kayak sindrom impostor gitu. Meski challenging, proses ini yang akhirnya membantu kita tumbuh dan mengembangkan pemahaman yang lebih dalam tentang <i>software development</i>, membentuk hubungan seimbang antara keyakinan dan pengetahuan dalam dunia <i>software development</i>.
         </p>
         <p>
-          These points are pretty much unavoidable in the journey of learning. I learned it the hard way when studying different topics for my research.
+          Jadi, tip tambahan gue selain ide dari ChatGPT adalah nikmati prosesnya. Jangan terlalu keras pada diri sendiri ketika Anda mengalami sindrom impostor atau efek Dunning-Kruger. Sebaliknya, gunakan pengalaman ini sebagai kesempatan untuk merenung tentang pengetahuan Anda, mencari dukungan, dan menetapkan tujuan yang masuk akal. Setiap orang menjalani perjalanan ini, dan itu merupakan langkah yang diperlukan menuju pertumbuhan dan perkembangan.
         </p>
         <p>
-          Given the lack of talk about imposter syndrome and the Dunning Kruger effect in academia, during a PhD, instead of reading about these cognitive distortions, we experience the whole journey several times. More specifically, we experience distortion in our knowledge-confidence ratio at least once per chapter, be it the Dunning-Kruger effect or imposter syndrome.
+          Memahami sindrom impostor dan efek Dunning-Kruger penting, terutama bagi mereka di dunia <i>software development</i>. Dengan mengakui masalah ini dan nikmati proses belajar, kita dapat mengatasi masalah ini dan bisa menjadi lebih produktif dan sukses dalam karier kita.
         </p>
         <p>
-          Also, the whole PhD journey puts us on a roller coaster of knowledge-confidence. We arrive at our universities on the first day quite humbly. We think we are great since we’ve been selected but also that there’s much to learn. First-year in, and is hard to not distort our knowledge-confidence relationship. We dealt with impossible tests from our classes and have done the initial research for our thesis. Most of us think that our thesis will grant us at least a Nobel prize. Hello, Dunning-Kruger!
-        </p>
-        <p>
-          Then we face the first committee. We present our work in seminars and we even submit our papers to journals. Most of us get harsh feedback. We realize that our perceived knowledge was not aligned with our real knowledge, and we start to doubt ourselves. We may experience imposter syndrome, feeling like we are not good enough and that our accomplishments are not significant.
-        </p>
-        <p>
-          But this journey is necessary. It allows us to learn from our mistakes and grow our real knowledge, which ultimately leads to a more balanced relationship between our confidence and our knowledge. It’s important to acknowledge that this journey is not easy, but it’s worth it.
-        </p>
-        <p>
-          So, my additional tip beyond chat GPT’s ideas is to embrace this journey. Don’t be too hard on yourself when you experience imposter syndrome or the Dunning-Kruger effect. Instead, use these experiences as opportunities to reflect on your knowledge, seek support, and set reasonable goals. Remember that everyone goes through this journey, and it’s a necessary step toward growth and development.
-        </p>
-        <p>
-          Understanding imposter syndrome and the Dunning-Kruger effect is important, especially for those in academia. By acknowledging these cognitive distortions and embracing the journey of knowledge accumulation, we can overcome them and become more productive and successful in our careers.
-        </p>
-        <p>
-          Over time, as individuals gain more knowledge and experience in their field, they may begin to normalize their confidence-knowledge relationship. They may come to understand their strengths and weaknesses and recognize that their abilities are not fixed but rather can be developed through hard work and dedication. This increased self-awareness can lead to a more realistic sense of confidence, which can allow individuals to make informed decisions and pursue their goals with greater certainty.
-        </p>
-        <p>
-          In conclusion, the journey of an individual during their PhD can be a dynamic process of self-discovery and development. Through the experience of the Dunning-Kruger effect and impostor syndrome, individuals may gain a more nuanced understanding of their abilities and develop a more balanced relationship between their confidence and knowledge.
+          Seiring berjalannya waktu, ketika individu mendapatkan lebih banyak pengetahuan dan pengalaman di bidang mereka, mereka mungkin mulai normalisasi hubungan keyakinan-pengetahuan mereka. Mereka mungkin memahami kelebihan dan kelemahan mereka dan menyadari bahwa kemampuan mereka tidaklah tetap tetapi dapat dikembangkan melalui kerja keras dan dedikasi. Kesadaran diri yang meningkat ini dapat mengarah pada rasa keyakinan yang lebih realistis, yang memungkinkan individu membuat keputusan yang terinformasi dan mengejar tujuan mereka dengan kepastian yang lebih besar.
         </p>
       </main>
     </article>
