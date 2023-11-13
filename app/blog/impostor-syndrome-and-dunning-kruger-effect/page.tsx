@@ -79,7 +79,7 @@ export default function Page() {
           Memahami sindrom impostor dan efek Dunning-Kruger penting, terutama bagi mereka di dunia <i>software development</i>. Dengan mengakui masalah ini dan nikmati proses belajar, kita dapat mengatasi masalah ini dan bisa menjadi lebih produktif dan sukses dalam karier kita.
         </p>
         <p>
-          Seiring berjalannya waktu, ketika individu mendapatkan lebih banyak pengetahuan dan pengalaman di bidang mereka, mereka mungkin mulai normalisasi hubungan keyakinan-pengetahuan mereka. Mereka mungkin memahami kelebihan dan kelemahan mereka dan menyadari bahwa kemampuan mereka tidaklah tetap tetapi dapat dikembangkan melalui kerja keras dan dedikasi. Kesadaran diri yang meningkat ini dapat mengarah pada rasa keyakinan yang lebih realistis, yang memungkinkan individu membuat keputusan yang terinformasi dan mengejar tujuan mereka dengan kepastian yang lebih besar.
+          Seiring berjalannya waktu, ketika seseorang mendapatkan lebih banyak pengetahuan dan pengalaman di bidang mereka, mereka mungkin mulai normalisasi hubungan keyakinan-pengetahuan mereka. Mereka mungkin memahami kelebihan dan kelemahan mereka dan menyadari bahwa kemampuan mereka tidaklah tetap tetapi dapat dikembangkan melalui kerja keras dan dedikasi. Kesadaran diri yang meningkat ini dapat mengarah pada rasa keyakinan yang lebih realistis, yang memungkinkan seseorang membuat keputusan yang terinformasi dan mengejar tujuan mereka dengan kepastian yang lebih besar.
         </p>
       </main>
     </article>
