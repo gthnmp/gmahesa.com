@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://raw.githubusercontent.com/gthnmp/vite-portofolio/master/public/assets/preview/share.webp',
+        url: '/assets/og.jpg',
         width: 1920,
         height: 1080,
       },
@@ -49,13 +49,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   verification: {
-    google: 'google',
-    yandex: 'yandex',
-    yahoo: 'yahoo',
-    other: {
-      me: ['my-email', 'my-link'],
-    },
-  },
+    google: 'qY0gvpQBLoDygRAZW9wRbVLfxb3tqiNrDJu5hhSvDYk',
+  }
 };
 
 export default async function RootLayout({
