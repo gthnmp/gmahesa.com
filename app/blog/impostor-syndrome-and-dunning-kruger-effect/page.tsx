@@ -4,10 +4,25 @@ import Image2 from '@/public/assets/blog-images/impostor-and-dunning-kruger/2.we
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Impostor Syndrome and The Dunning-Kruger Effect',
-  description: 'The correlation between impostor syndrome and the Dunning-Kruger effect.',
+  metadataBase: new URL('https://gmahesa.com/blog/impostor-syndrome-and-dunning-kruger-effect'),
+  title: 'Impostor Syndrome and The Dunning-Kruger Effect | Gathan Mahesa',
+  description: 'The correlation between impostor syndrome and the Dunning-Kruger effect',
+  openGraph: {
+    title: 'Gathan Mahesa',
+    description: 'The correlation between impostor syndrome and the Dunning-Kruger effect',
+    url: 'https://gmahesa.com/blog/impostor-syndrome-and-dunning-kruger-effect',
+    siteName: 'Gathan Mahesa',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/assets/og.jpg',
+        width: 1920,
+        height: 1080,
+      },
+    ],
+  }
 };
-
 export default function Page() {
   return (
     <article className="flex flex-col gap-10 px-4 md:px-0">
