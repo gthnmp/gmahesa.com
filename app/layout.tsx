@@ -14,15 +14,15 @@ const inter = Ubuntu({
 export const metadata: Metadata = {
   metadataBase: new URL('https://gmahesa.com'),
   title: {
-    default: 'Gathan Mahesa',
+    default: 'Gathan Mahesa | Web Developer',
     template: '%s | Gathan Mahesa',
   },
   description: 'Developer, self-taught learner, and sometimes a writer.',
   openGraph: {
-    title: 'Gathan Mahesa',
+    title: 'Gathan Mahesa | Web Developer',
     description: 'Developer, self-taught learner, and sometimes a writer.',
     url: 'https://gmahesa.com',
-    siteName: 'Gathan Mahesa',
+    siteName: 'Gathan Mahesa | Web Developer',
     locale: 'en_US',
     type: 'website',
     images: [
