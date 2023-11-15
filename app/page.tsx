@@ -21,16 +21,16 @@ export default function Home() {
       </div>
       <div className='w-full h-96 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5  bg-opacity-30'>
         <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-1 row-span-2'> 
-          <Image src={RemanThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+          <Image priority quality={75} src={RemanThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
         <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-1 row-start-3 md:col-start-2 md:row-start-1'> 
-          <Image src={PortfolioV1Thumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+          <Image priority quality={75} src={PortfolioV1Thumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
         <div className='w-full h-full bg-neutral-500 rounded-md  overflow-hidden col-start-2 row-start-1 md:row-start-2'> 
-          <Image src={JakartaThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+          <Image priority quality={75} src={JakartaThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
         <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-2 row-span-2 md:col-start-3 md:row-span-2'> 
-          <Image src={OnixThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+          <Image priority quality={75} src={OnixThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
       </div>
       <div className='flex flex-col gap-5'>
