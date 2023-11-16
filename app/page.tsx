@@ -39,8 +39,7 @@ export default function Home() {
         </p>
       </div>
       <div className='flex flex-col gap-5'>
-        <Anchor href='https://twitter.com/veroxida' subtitle='42059 views' title='Git Gud With Git' />
-        <Anchor href='https://linkedin.com/in/gathan' subtitle='696969 views' title='Grab with Grep' />
+        <Anchor href='/blog/impostor-syndrome-and-dunning-kruger-effect' subtitle='20 views' title='Impostor Sydnrome and The Dunning-Kruger Effect' />
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light '>
