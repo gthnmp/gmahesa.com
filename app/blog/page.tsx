@@ -1,4 +1,3 @@
-import Anchor from "@/components/anchor"
 import Link from "next/link"
 import { Metadata } from "next"
 
