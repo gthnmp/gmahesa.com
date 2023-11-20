@@ -14,7 +14,7 @@ interface Props {
 
 export function BlogAnchor ({title, summary, href} : Props) {
   return(
-    <Link href={href} target="_blank" className="relative overflow-hidden max-w-full w-full h-20 flex gap-5 items-center bg-neutral-800 border-neutral-700 border-[1px] rounded-md px-2 py-2">
+    <Link href={href} className="relative overflow-hidden max-w-full w-full h-20 flex gap-5 items-center bg-neutral-800 border-neutral-700 border-[1px] rounded-md px-2 py-2">
       <div className="flex flex-col max-w-[80%]">
         <span className="font-semibold line-clamp-1">{title}</span>
         <span className="text-neutral-400 line-clamp-1">{summary}</span>
