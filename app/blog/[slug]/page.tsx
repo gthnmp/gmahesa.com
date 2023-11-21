@@ -81,7 +81,7 @@ export default function Blog({ params } : any) {
   }
 
   return (
-    <section className="pb-24">
+    <section className="md:pb-24 md:px-0 px-4 pb-0">
       <script
         type="application/ld+json"
         suppressHydrationWarning
