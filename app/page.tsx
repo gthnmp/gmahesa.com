@@ -39,7 +39,11 @@ export default function Home() {
         </p>
       </div>
       <div className='flex flex-col gap-5'>
-        <BlogAnchor href='/blog/impostor-syndrome-and-dunning-kruger-effect' summary='The correlation between impostor syndrome and the Dunning-Kruger effect' title='Impostor Sydnrome and The Dunning-Kruger Effect' />
+        <BlogAnchor 
+          href='/blog/phenomena-when-learning' 
+          title='Impostor Sydnrome and The Dunning-Kruger Effect'
+          summary='The correlation between impostor syndrome and the Dunning-Kruger effect' 
+        />
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light '>
@@ -47,8 +51,20 @@ export default function Home() {
         </p>
       </div>
       <div className='flex gap-5 flex-col md:flex-row'>
-        <SocialAnchor src={TwitterPhoto} alt={"Gathan Mahesa's Twitter Profile Picture"} platform='twitter' href='https://twitter.com/veroxida' subtitle='16 Followers' title='@veroxida' />
-        <SocialAnchor src={LinkedinPhoto} alt={"Gathan Mahesa's LinkedIn Profile Picture"} platform='linkedin' href='https://linkedin.com/in/gathan' subtitle='4 Connections' title='@gathan' />
+        <SocialAnchor 
+          src={TwitterPhoto} 
+          alt={"Gathan Mahesa's Twitter Profile Picture"} 
+          platform='twitter' 
+          href='https://twitter.com/veroxida' 
+          subtitle='16 Followers' title='@veroxida' 
+        />
+        <SocialAnchor 
+          src={LinkedinPhoto} 
+          alt={"Gathan Mahesa's LinkedIn Profile Picture"} 
+          platform='linkedin' 
+          href='https://linkedin.com/in/gathan' 
+          subtitle='4 Connections' title='@gathan' 
+        />
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light '> I do web development using React and Vanilla JS. I have solid background in computer networking from my previous education and have experience using Linux and Docker Container. I look forward to connecting and exploring collaborative opportunities in the field of web development and DevOps. </p>
