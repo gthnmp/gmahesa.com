@@ -22,3 +22,10 @@
   transform: translateX(0);
 }
 
+.blog-content > h2 {
+  @apply text-3xl font-semibold
+}
+
+.blog-content > ol {
+  @apply pl-10 flex flex-col gap-3 list-decimal
+}
