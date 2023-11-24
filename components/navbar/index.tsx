@@ -9,6 +9,7 @@ export default function Navbar ({session} : {session : any}) {
       <div className="flex gap-5 items-center">
         <Link href="/"> Home </Link>
         <Link href="/blog"> Blog </Link>
+        <Link href="/work"> Work </Link>
         <Link href="/guestbook"> Guestbook </Link>
       </div>
       {session &&
