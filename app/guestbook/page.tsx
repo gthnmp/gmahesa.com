@@ -15,7 +15,7 @@ export default async function Page() {
   return (
     <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0'>
       <div className='flex flex-col gap-5'>
-        <h1 className='text-3xl font-medium'>Sign my guestbook</h1>
+        <h1 className='text-xl md:text-3xl font-medium'>Sign my guestbook</h1>
         {session ? (
           <GuestbookForm/>
         ) : (
