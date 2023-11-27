@@ -5,6 +5,8 @@ import { BsArrowUpRight } from 'react-icons/bs'
 import {BlogAnchor, SocialAnchor} from '@/components/anchor'
 import TwitterPhoto from '@/public/assets/twitter.jpg'
 import LinkedinPhoto from '@/public/assets/linkedin.jpeg'
+import GithubPhoto from '@/public/assets/github.jpg'
+import EmailPhoto from '@/public/assets/email.jpg'
 import RemanThumbnail from '@/public/assets/rafly-diaz.webp'
 import JakartaThumbnail from '@/public/assets/jakarta.webp'
 import OnixThumbnail from '@/public/assets/onix.webp'
@@ -16,7 +18,7 @@ export default function Home() {
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl md:text-3xl font-medium'> hey there, I&apos;m gathan👋</h1>
         <p className='font-light '> 
-          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a networking guy. Currently, I&apos;m freelancing in these roles and always open to new opportunities. Let&apos;s build something awesome together!
+          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a tech support. Currently, I&apos;m working full-time at <Link href="https://worldhost.group" target="_blank" className='transition-all duration-150 bg-gradient-to-r from-pink-400 to-yellow-400 inline-block text-transparent bg-clip-text'> World Host Group </Link> as a techical support, but I'm always open to building cool project. Let&apos;s build something awesome together!
         </p>
       </div>
       <div className='w-full h-96 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5  bg-opacity-30'>
@@ -47,10 +49,10 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-5'>
         <p className='font-light '>
-          Hey, don&apos;t forget to check out my Twitter and LinkedIn profiles. Feel free to give me a follow on there too! It&apos;s a great way to stay connected and keep up with what I&apos;m up to. Thanks for the support! 
+          Feel free to reach out to me via my socials. Thank you for visiting! 
         </p>
       </div>
-      <div className='flex gap-5 flex-col md:flex-row'>
+      <div className='grid grid-rows-2 grid-cols-2 gap-5'>
         <SocialAnchor 
           src={TwitterPhoto} 
           alt={"Gathan Mahesa's Twitter Profile Picture"} 
@@ -63,17 +65,22 @@ export default function Home() {
           alt={"Gathan Mahesa's LinkedIn Profile Picture"} 
           platform='linkedin' 
           href='https://linkedin.com/in/gathan' 
-          subtitle='4 Connections' title='@gathan' 
+          subtitle='24 Connections' title='in/gathan' 
         />
-      </div>
-      <div className='flex flex-col gap-5'>
-        <p className='font-light '> I do web development using React and Vanilla JS. I have solid background in computer networking from my previous education and have experience using Linux and Docker Container. I look forward to connecting and exploring collaborative opportunities in the field of web development and DevOps. </p>
-      </div>
-      <div className='flex  justify-between flex-col md:flex-row font-light'>
-        <div className='flex flex-col md:flex-row gap-1'>
-          <Link href="https://github.com/gthnmp" target='_blank' className='flex  gap-2 items-center'> My Github <BsArrowUpRight/></Link>
-          <Link href="mailto:gathan.mahesa@gmail.com" className='flex  gap-2 items-center'> Mail Me <BsArrowUpRight/></Link>
-        </div>
+        <SocialAnchor 
+          src={GithubPhoto} 
+          alt={"Gathan Mahesa's Github Profile Picture"} 
+          platform='github' 
+          href='https://github.com/gthnmp' 
+          subtitle='35 Repositories' title='gthnmp' 
+        />
+        <SocialAnchor 
+          src={EmailPhoto} 
+          alt={"Gathan Mahesa's Email Profile Picture"} 
+          platform='email' 
+          href='mailto:mail@gmahesa.com' 
+          subtitle='' title='mail@gmahesa.com' 
+        />
       </div>
     </main>
   )
