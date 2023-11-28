@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+nav a {
+  @apply hover:text-neutral-300 transition-all duration-300
+}
+
 .blog-card-title {
   position: relative;
 }
