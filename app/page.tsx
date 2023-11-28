@@ -42,6 +42,11 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-5'>
         <BlogAnchor 
+          href='/blog/cpanel-htaccess-bug' 
+          title='cPanel keeps rewriting the htaccess file'
+          summary='cPanel keeps rewriting the htaccess file problem' 
+        />
+        <BlogAnchor 
           href='/blog/phenomena-when-learning' 
           title='Impostor Sydnrome and The Dunning-Kruger Effect'
           summary='The correlation between impostor syndrome and the Dunning-Kruger effect' 
