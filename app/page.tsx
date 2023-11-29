@@ -18,7 +18,7 @@ export default function Home() {
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl md:text-3xl font-medium'> hey there, I&apos;m gathan👋</h1>
         <p className='font-light '> 
-          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a tech support. Currently, I&apos;m working full-time at <Link href="https://worldhost.group" target="_blank" className='transition-all duration-150 bg-gradient-to-r from-pink-400 to-yellow-400 inline-block text-transparent bg-clip-text'> World Host Group </Link> as a techical support, but I'm always open to building cool project. Let&apos;s build something awesome together!
+          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a tech support. Currently, I&apos;m working full-time at <Link href="https://worldhost.group" target="_blank" className='bg-gradient-to-r from-pink-400 to-yellow-400 inline-block text-transparent bg-clip-text'> World Host Group </Link> as a technical support, but I'm always open to building cool project. Let&apos;s build something awesome together!
         </p>
       </div>
       <div className='w-full h-96 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5  bg-opacity-30'>
@@ -57,7 +57,7 @@ export default function Home() {
           Feel free to reach out to me via my socials. Thank you for visiting! 
         </p>
       </div>
-      <div className='grid grid-rows-2 grid-cols-2 gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-5'>
         <SocialAnchor 
           src={TwitterPhoto} 
           alt={"Gathan Mahesa's Twitter Profile Picture"} 
