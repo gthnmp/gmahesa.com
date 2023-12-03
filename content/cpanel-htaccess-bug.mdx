@@ -1,0 +1,35 @@
+---
+title: 'cPanel keeps rewriting the htaccess file'
+publishedAt: '2023-12-2'
+summary: 'cPanel keeps rewriting the htaccess file proble'
+---
+
+Yesterday, while doing some support tickets, I stumbled upon an issue by one of our clients. It seems that their cPanel has been persistently updating the .htaccess file, forcefully reverting the PHP version from 8.1 to 7.1. So how to fix this?
+
+
+## Understanding The Root Cause
+
+The problem caused by the default settings of the MultiPHP Manager in WHM (Web Host Manager). This tool manages PHP versions across the server and individual user accounts. The issue happens when the default PHP version for the entire server conflicts with the specified version for individual cPanel users.
+
+## How to fix it?
+To troubleshoot this problem head-on, follow these steps within the WHM interface:
+
+1. **Access WHM**: Log in to WHM using your administrator credentials.
+
+2. **Locate MultiPHP Manager**: Once in WHM, find the "MultiPHP Manager" option. It's typically under the "Software" or "Server Configuration" section.
+
+3. **Check System Settings**: In the MultiPHP Manager, navigate to the "System Settings" tab. Here, you'll find the default PHP version set for the entire server.
+
+4. **Review User Domain Settings**: Move on to the "User Domain Settings" tab. This section displays the PHP version specified for individual cPanel users.
+
+5. **Update System Settings**: Ensure that the default PHP version in the "System Settings" tab is set to the desired version (in this case, 8.1).
+    
+6. **Adjust User Domain Settings**: Verify that the PHP version for each cPanel user in the "User Domain Settings" tab matches the server's default version.
+    
+7. **Customize as Needed**: Feel free to modify PHP versions based on your specific requirements for individual users. This flexibility ensures compatibility with different applications and websites hosted on your server.
+    
+By synchronizing these settings, we effectively prevent cPanel from overwriting the .htaccess file with unwanted PHP version changes.
+
+## Conclusion
+
+In conclusion, the key to resolving the cPanel .htaccess file rewrite problem lies in the MultiPHP Manager settings in WHM. Taking a few moments to align the default PHP version for the server with individual user settings will save you from the hassle of dealing with unexpected and unauthorized changes.
