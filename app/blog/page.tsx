@@ -12,9 +12,9 @@ function BlogCard ({title, summary, href} : {title: string, summary: string, hre
     <Link href={href} className="w-full h-max">
       <div className="w-full h-full flex flex-col">
         <div className="overflow-x-hidden">
-          <span className="blog-card-title text-xl font-medium"> {title} </span>
+          <span className="blog-card-title text-lg font-medium"> {title} </span>
         </div>
-        <span className="font-light"> {summary} </span>
+        <span className="font-light text-neutral-300"> {summary} </span>
       </div>
     </Link>
   )
