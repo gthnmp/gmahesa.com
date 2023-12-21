@@ -27,6 +27,7 @@ export default function BlogPage() {
     <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0'>
       <div className='flex flex-col gap-5'>
         <h1 className='text-xl md:text-3xl font-medium'> I also have poorly written blogs </h1>
+        <p className='font-light'> Opinions expressed are solely my own and do not express the views or opinions of my employer. </p> 
       </div>
       <ul className='flex flex-col gap-5'>
         {allBlogs
