@@ -42,9 +42,9 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-5'>
         <BlogAnchor 
-          href='/blog/cpanel-htaccess-bug' 
-          title='cPanel keeps rewriting the htaccess file'
-          summary='cPanel keeps rewriting the htaccess file problem' 
+          href='/blog/wheel-of-life' 
+          title='The Wheel of Life'
+          summary='They wish for things to be simple, wondering why there are so many complicated issues.' 
         />
         <BlogAnchor 
           href='/blog/phenomena-when-learning' 
@@ -70,14 +70,14 @@ export default function Home() {
           alt={"Gathan Mahesa's LinkedIn Profile Picture"} 
           platform='linkedin' 
           href='https://linkedin.com/in/gathan' 
-          subtitle='24 Connections' title='in/gathan' 
+          subtitle='46 Connections' title='in/gathan' 
         />
         <SocialAnchor 
           src={GithubPhoto} 
           alt={"Gathan Mahesa's Github Profile Picture"} 
           platform='github' 
           href='https://github.com/gthnmp' 
-          subtitle='35 Repositories' title='gthnmp' 
+          subtitle='42 Repositories' title='gthnmp' 
         />
         <SocialAnchor 
           src={EmailPhoto} 
