@@ -16,8 +16,8 @@ export function BlogAnchor ({title, summary, href} : Props) {
   return(
     <Link href={href} className="relative overflow-hidden max-w-full w-full h-20 flex gap-5 items-center bg-neutral-800 border-neutral-700 border-[1px] rounded-md px-2 py-2">
       <div className="flex flex-col max-w-[80%]">
-        <span className="font-semibold line-clamp-1">{title}</span>
-        <span className="text-neutral-400 line-clamp-1">{summary}</span>
+        <span className="font-medium line-clamp-1">{title}</span>
+        <span className="font-light text-neutral-400 line-clamp-1">{summary}</span>
       </div>
       <BsArrowUpRight className="absolute right-5 scale-125"/>
     </Link>
@@ -34,8 +34,8 @@ export function SocialAnchor ({src, alt, title, subtitle, href, platform} : Prop
         </div>
       }
       <div className="flex flex-col">
-        <span className="font-semibold">{title}</span>
-        <span className="text-neutral-400">{subtitle}</span>
+        <span className="font-medium">{title}</span>
+        <span className="font-light text-neutral-400">{subtitle}</span>
       </div>
       <BsArrowUpRight className="absolute right-5 scale-125"/>
     </Link>
