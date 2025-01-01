@@ -9,7 +9,7 @@ export default function Navbar ({session} : {session : any}) {
       <div className="flex gap-5 items-center">
         <Link href="/"> Home </Link>
         <Link href="/blog"> Blog </Link>
-        <Link href="/guestbook"> Guestbook </Link>
+        {/*<Link href="/guestbook"> Guestbook </Link>*/}
       </div>
       {session &&
         <button onClick={() => signOut()} className="bg-red-700 p-2 rounded-md flex items-center gap-2">
