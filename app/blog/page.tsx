@@ -14,7 +14,7 @@ function BlogCard ({title, summary, href} : {title: string, summary: string, hre
         <div className="overflow-x-hidden">
           <span className="blog-card-title text-lg font-medium"> {title} </span>
         </div>
-        <span className="font-light text-neutral-300"> {summary} </span>
+        <span className="font-light text-black"> {summary} </span>
       </div>
     </Link>
   )

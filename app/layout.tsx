@@ -14,7 +14,7 @@ const inter = Ubuntu({
 export const metadata: Metadata = {
   metadataBase: new URL('https://gmahesa.com'),
   title: {
-    default: 'Gathan Mahesa - Software Developer',
+    default: 'Gathan Mahesa',
     template: '%s | Gathan Mahesa',
   },
   creator:"Gathan Mahesa",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     "WHM",
     "Node JS"
   ],
-  description: 'Web specialist. Resolves cPanel, WHM, Linux issues. Debugger, and develop scalable Node.js solutions.',
+  description: 'A technical support, a web development specialist, and a technical supervisor',
   openGraph: {
-    title: 'Gathan Mahesa - Software Developer',
-    description: 'Web specialist. Resolves cPanel, WHM, Linux issues. Debugger, and develop scalable Node.js solutions.',
+    title: 'Gathan Mahesa',
+    description: 'A technical support, a web development specialist, and a technical supervisor',
     url: 'https://gmahesa.com',
     siteName: 'Gathan Mahesa',
     locale: 'en_US',
@@ -89,7 +89,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div id="app" className='bg-neutral-900 text-white max-w-screen min-h-screen grid place-items-center'>
+        <div id="app" className='bg-white text-black max-w-screen min-h-screen grid place-items-center'>
           <div className='relative max-w-screen-md w-full h-full py-32 flex flex-col gap-20'>
             <Navbar session={session}/>
             {children}

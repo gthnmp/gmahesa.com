@@ -7,32 +7,33 @@ import TwitterPhoto from '@/public/assets/twitter.jpg'
 import LinkedinPhoto from '@/public/assets/linkedin.jpeg'
 import GithubPhoto from '@/public/assets/github.jpg'
 import EmailPhoto from '@/public/assets/email.jpg'
-import RemanThumbnail from '@/public/assets/rafly-diaz.webp'
-import JakartaThumbnail from '@/public/assets/jakarta.webp'
-import OnixThumbnail from '@/public/assets/onix.webp'
-import PortfolioV1Thumbnail from '@/public/assets/blog.webp'
+
+import WebcentralTeam from '@/public/assets/WebCentral-Team.jpg'
+import Self1 from '@/public/assets/Self-1.jpeg'
+import Self2 from '@/public/assets/Self-2.jpg'
+import Self3 from '@/public/assets/Self-3.jpg'
 
 export default function Home() {
   return (
     <main className='w-full h-full flex flex-col gap-10 px-4 md:px-0 text-lg leading-8 md:leading-0'>
       <div className='flex flex-col gap-5'>
-        <h1 className='text-xl md:text-3xl font-medium'> hey there, I&apos;m gathan👋</h1>
+        <h1 className='text-xl md:text-3xl font-medium'> Hey there! I&apos;m Gathan👋</h1>
         <p className='font-light '> 
-          I&apos;m a web developer (mostly doing frontends), devops enthusiast, and a tech support. Currently, I&apos;m working full-time at <Link href="https://worldhost.group" target="_blank" className='bg-gradient-to-r from-pink-400 to-yellow-400 inline-block text-transparent bg-clip-text'> World Host Group </Link> as a technical support, but I'm always open to building cool project. Let&apos;s build something awesome together!
+          I&apos;m a technial support, web developer (mostly doing frontends), and a SysAdmin enthusiast. Currently, I&apos;m working full-time at <Link href="https://hosting.com" target="_blank" className='bg-gradient-to-r from-pink-400 to-yellow-500 inline-block text-transparent bg-clip-text'> Hosting.com </Link> as a technical supervisor, but I'm always open to building cool projects :) 
         </p>
       </div>
       <div className='w-full h-96 grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-5  bg-opacity-30'>
-        <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-1 row-span-2'> 
-          <Image priority quality={75} src={RemanThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+        <div className='w-full h-full bg-neutral-500 rounded overflow-hidden col-start-1 row-span-2'> 
+          <Image priority quality={75} src={Self2} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
-        <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-1 row-start-3 md:col-start-2 md:row-start-1'> 
-          <Image priority quality={75} src={PortfolioV1Thumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+        <div className='w-full h-full bg-neutral-500 rounded overflow-hidden col-start-1 row-start-3 md:col-start-2 md:row-start-1'> 
+          <Image priority quality={75} src={WebcentralTeam} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
-        <div className='w-full h-full bg-neutral-500 rounded-md  overflow-hidden col-start-2 row-start-1 md:row-start-2'> 
-          <Image priority quality={75} src={JakartaThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+        <div className='w-full h-full bg-neutral-500 rounded  overflow-hidden col-start-2 row-start-1 md:row-start-2'> 
+          <Image priority quality={75} src={Self1} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
-        <div className='w-full h-full bg-neutral-500 rounded-md overflow-hidden col-start-2 row-span-2 md:col-start-3 md:row-span-2'> 
-          <Image priority quality={75} src={OnixThumbnail} alt="A picture of a camera" className='w-full h-full object-cover' />
+        <div className='w-full h-full bg-neutral-500 rounded overflow-hidden col-start-2 row-span-2 md:col-start-3 md:row-span-2'> 
+          <Image priority quality={75} src={Self3} alt="A picture of a camera" className='w-full h-full object-cover' />
         </div>
       </div>
       <div className='flex flex-col gap-5'>
@@ -52,11 +53,13 @@ export default function Home() {
           summary='The correlation between impostor syndrome and the Dunning-Kruger effect' 
         />
       </div>
+      {/*
       <div className='flex flex-col gap-5'>
         <p className='font-light '>
           Feel free to reach out to me via my socials. Thank you for visiting! 
         </p>
       </div>
+       Temporarily disabling this section
       <div className='grid grid-cols-1 md:grid-cols-2 grid-flow-row gap-5'>
         <SocialAnchor 
           src={TwitterPhoto} 
@@ -87,6 +90,7 @@ export default function Home() {
           subtitle='' title='mail@gmahesa.com' 
         />
       </div>
+      */}
     </main>
   )
 }
