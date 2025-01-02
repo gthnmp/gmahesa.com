@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/navbar'
-import { authConfig } from '@/utils/auth'
-import { getServerSession } from 'next-auth'
 import { Analytics } from '@vercel/analytics/react'
 
 const inter = Ubuntu({
@@ -85,13 +83,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const session = await getServerSession(authConfig) 
   return (
     <html lang="en">
       <body className={inter.className}>
         <div id="app" className='bg-white text-black max-w-screen min-h-screen grid place-items-center'>
           <div className='relative max-w-screen-md w-full h-full py-32 flex flex-col gap-20'>
-            <Navbar session={session}/>
+            <Navbar/>
             {children}
             <Analytics/>
           </div>
